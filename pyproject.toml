@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=40.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ShadowCloak"
+version = "1.0.0"
+description = "AES secure encryption tool with ECDH"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Giorgio Livraghi", email= "giorgio5395@gmail.com"}
+]
+requires-python = ">=3.8"
+dependencies = [
+    "cryptography",
+    "PyNaCl",
+    "flask"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # Packages location
